@@ -1,0 +1,28 @@
+public class Exemplo_1 {
+
+    public static void main(String arg[]) {
+
+        float idade;
+        
+        idade = Float.parseFloat(JOptionPane.showInputDialog(null, "Dígite sua idade"));
+
+        if (idade < 18) {
+            JOptionPane.showMessageDialog(null,
+             "Você não pode entrar",
+             "IDADE",
+            JOptionPane.INFORMATION_MESSAGE);
+        }
+        if (idade > 18) {
+            JOptionPane.showMessageDialog(null,
+             "Você pode entrar",
+             "IDADE",
+            JOptionPane.INFORMATION_MESSAGE);
+        }
+        if (idade == 18) {
+            JOptionPane.showMessageDialog(null,
+             "Você pode entrar",
+             "IDADE",
+            JOptionPane.INFORMATION_MESSAGE);
+        }
+    }
+}
