@@ -1,0 +1,37 @@
+public class Desafio_1 {
+    public static void main (String arg[]){
+        
+        String nome,sobrenome;
+        int idade;
+            
+        nome = JOptionPane.showInputDialog(null,
+                " Digite seu nome ",
+                " Título: Nome ", 
+               JOptionPane.QUESTION_MESSAGE);
+       
+    
+        sobrenome = JOptionPane.showInputDialog(null,
+                     " Digite seu Sobrenome ",
+                     " Título: Sobrenome ",
+                    JOptionPane.QUESTION_MESSAGE);
+        
+    
+        idade =     (int) Float.parseFloat(JOptionPane.showInputDialog(null,
+                     " Qual sua idade ? ",
+                     " Dado ",
+                    JOptionPane.QUESTION_MESSAGE));
+         
+            
+            JOptionPane.showMessageDialog(null,
+                " Seu nome é " + nome + 
+                        sobrenome,
+                " Titulo: Info ",
+            JOptionPane.INFORMATION_MESSAGE);
+            
+            JOptionPane.showMessageDialog(null,
+                " Você possui " + idade + " anos",
+                " Dado ",
+            JOptionPane.INFORMATION_MESSAGE);
+                
+    }
+}
