@@ -28,7 +28,7 @@ public class Desafio_1 {
         JOptionPane.showMessageDialog(null,
                 " Você possui " + idade + " anos",
                 " Dado ",
-                JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.INFORMATION_MESSAGE); 
 
     }
 }
