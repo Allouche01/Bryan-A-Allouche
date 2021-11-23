@@ -1,0 +1,27 @@
+public class Exercicio_1 {
+
+    public static void main(String args[]) {
+
+        int x, y;
+
+        x = (int) Float.parseFloat(JOptionPane.showInputDialog(null,
+                "Digite as horas: ",
+                "Dado",
+                JOptionPane.INFORMATION_MESSAGE));
+        y = (int) Float.parseFloat(JOptionPane.showInputDialog(null,
+                "Digite os minutos: ",
+                "Dado",
+                JOptionPane.INFORMATION_MESSAGE));
+        JOptionPane.showMessageDialog(null,
+                "Passaram-se " + horarioPassou(x, y) + " minutos desde que o dia começou.",
+                "Dado",
+                JOptionPane.INFORMATION_MESSAGE);
+
+    }
+
+    static int horarioPassou(int a, int b) {
+        int result;
+        result = a * 60 + b;
+        return result;
+    }
+}
