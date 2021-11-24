@@ -18,7 +18,7 @@ public class Exemplo_2 {
         if (soma > 10) {
             JOptionPane.showMessageDialog(null,
                     "O resultado é maior que 10",
-                    " INFO ",
+                    "INFO",
                     JOptionPane.INFORMATION_MESSAGE);
         } else if (soma < 10) {
             JOptionPane.showMessageDialog(null,
