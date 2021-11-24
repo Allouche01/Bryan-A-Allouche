@@ -1,0 +1,49 @@
+public class Exemplo_Switch2 {
+
+    public static void main(String arg[]) {
+
+        float valor_da_parcela, valor_compra;
+        int qtd_parcelas, juros, valor_final;
+
+        valor_compra = Float.parseFloat(JOptionPane.showInputDialog(null,
+                "Entre com o valor da compra ",
+                " Dado ",
+                JOptionPane.QUESTION_MESSAGE));
+        qtd_parcelas = (int) Float.parseFloat(JOptionPane.showInputDialog(null,
+                "Entre com a qtde de parcelas : \n1 \n2 \n4 \n6 \n12 \n24 ",
+                " Dado ",
+                JOptionPane.QUESTION_MESSAGE));
+
+        switch (qtd_parcelas) {
+            case 1:
+                juros = 0;
+                break;
+            case 2:
+                juros = 2;
+                break;
+            case 4:
+                juros = 5;
+                break;
+            case 6:
+                juros = 10;
+                break;
+            case 12:
+                juros = 18;
+                break;
+            case 24:
+                juros = 26;
+                break;
+            default:
+                juros = -1;
+        }
+
+        valor_final = (int) (valor_compra + valor_compra * juros / 100);
+        valor_da_parcela = valor_final / qtd_parcelas;
+
+        JOptionPane.showMessageDialog(null,
+                "O valor de cada parcela é " + valor_da_parcela,
+                " Dado ",
+                JOptionPane.INFORMATION_MESSAGE);
+
+    }
+}
