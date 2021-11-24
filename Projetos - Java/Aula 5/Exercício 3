@@ -1,0 +1,36 @@
+public class Exercicio_3 {
+
+    public static void main(String args[]) {
+        
+        int a1, a2, soma, af = 0, a3, a4;
+
+        a1 = (int) Float.parseFloat(JOptionPane.showInputDialog(null, "Qual sua A1 ? "));
+        a2 = (int) Float.parseFloat(JOptionPane.showInputDialog(null, "Qual sua A2 ? "));
+
+        soma = (a1 + a2) / 2;
+
+        if (soma >= 6) {
+            JOptionPane.showMessageDialog(null,
+                    "APROVADO!!!",
+                    "DADO",
+                    JOptionPane.INFORMATION_MESSAGE);
+        } else if (soma <= 5 && soma >= 1) {
+            af = (int) Float.parseFloat(JOptionPane.showInputDialog(null, "Quanto você tirou na AF ? "));
+        }
+
+        a3 = (af + a1) / 2;
+        a4 = (af + a2) / 2;
+
+        if (a1 > a2) {
+            JOptionPane.showMessageDialog(null,
+                    "Sua média final é: " + a3,
+                    "DADO",
+                    JOptionPane.INFORMATION_MESSAGE);
+        } else if (a1 < a2) {
+            JOptionPane.showMessageDialog(null,
+                    "Sua média final é: " + a4,
+                    "DADO",
+                    JOptionPane.INFORMATION_MESSAGE);
+        }
+    }
+}
