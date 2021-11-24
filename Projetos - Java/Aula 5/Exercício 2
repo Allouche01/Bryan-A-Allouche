@@ -1,0 +1,27 @@
+public class Exercicio_2 {
+
+    public static void main(String args[]) {
+        
+        int a, b;
+
+        a = (int) Float.parseFloat(JOptionPane.showInputDialog(null, "Dígite um número "));
+        b = (int) Float.parseFloat(JOptionPane.showInputDialog(null, "Dígite outro número "));
+
+        if (a == b) {
+            JOptionPane.showMessageDialog(null,
+                    "Os dois valores digitados são iguais ",
+                    "Dados",
+                    JOptionPane.INFORMATION_MESSAGE);
+        } else if (a <= b) {
+            JOptionPane.showMessageDialog(null,
+                    "o primeiro valor é menor que o segundo ",
+                    "Dados",
+                    JOptionPane.INFORMATION_MESSAGE);
+        } else if (a >= b) {
+            JOptionPane.showMessageDialog(null,
+                    "o primeiro valor é maior que o segundo ",
+                    "Dados",
+                    JOptionPane.INFORMATION_MESSAGE);
+        }
+    }
+}
