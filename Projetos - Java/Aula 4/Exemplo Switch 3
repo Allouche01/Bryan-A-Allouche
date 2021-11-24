@@ -1,0 +1,30 @@
+public class Exemplo_Switch3 {
+
+    public static void main(String arg[]) {
+
+        String sexo;
+
+        sexo = JOptionPane.showInputDialog(null,
+                "Qual seu sexo ? \nF \nM",
+                " Dado ",
+                JOptionPane.QUESTION_MESSAGE);
+
+        switch (sexo) {
+            case "F":
+                System.out.println("Você é do sexo feminino");
+                break;
+            case "M":
+                System.out.println("Você é do sexo masculino");
+                break;
+
+        }
+    }
+
+    static int solicitaNumero(String msg) {
+
+        return Integer.parseInt(JOptionPane.showInputDialog(null,
+                msg,
+                "Entrada de Dados",
+                JOptionPane.WARNING_MESSAGE));
+    }
+}
