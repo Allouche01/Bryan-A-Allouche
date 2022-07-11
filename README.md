@@ -1,7 +1,7 @@
 ## Olá! Eu sou o Bryan A Allouche
 
 - 📚 Desenvolvedor, Administrador e Estudante;
-- 💼 Atualmente trabalho com After-Sales;
+- 💼 Atualmente trabalho como Aux. Fiscal;
 - 👨‍💻 Deep in Back-end;
 
 <div>
